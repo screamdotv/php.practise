@@ -8,11 +8,11 @@
                         <?php foreach ($posts as $post) : ?>
                             <div class="card mb-3">
                                 <div class="card-header" style="background-color: #9eeaf9;">
-                                    <a href="post/<?= $post['slug'] ?>"><?= $post['title'] ?></a>
+                                    <a href="post?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
                                 </div>
                                 <div class="card-body">
                                     <blockquote class="blockquote mb-0">
-                                        <p><?= $post['desc'] ?></p>
+                                        <p><?= $post['excerpt'] ?></p>
                                         <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                                     </blockquote>
                                 </div>
